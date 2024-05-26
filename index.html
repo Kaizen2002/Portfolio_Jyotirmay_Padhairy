@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jyotirmay Padhiary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- navbar  -->
+        <div class="nav-bar">
+            <div class="nav-left">
+                <a href="#home"><b>JYOTIRMAY</b></a>
+            </div>
+            <div class="nav-right">
+                <a href=" #about">About</a>
+                <a href="#project">Project</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <!-- header -->
+
+        <header class="main-container" id="home">
+            <div class="display-middle">
+                <h1 class="text">
+                    <span class="hi">Hi,</span>
+                    <span class="name">This is Jyotirmay Padhiary</span>
+                </h1>
+            </div>
+        </header>
+
+        <!-- about  -->
+
+        <div class="about" id="about">
+            <h2 class="about-h2">ABOUT</h2>
+            <p class=""><i>I am a Web Developer</i></p>
+            <p class="about-para">Greetings! I'm Jyotirmay Padhiary, a distinguished Computer Science & Engineering
+                alumnus from Gandhi Institute for Technology, Bhubaneswar. My journey is anchored by a robust foundation
+                in programming, web development, and graphic design, meticulously crafted through academic rigor,
+                hands-on projects, and enriching internships.
+
+                My expertise spans across Java, HTML5, CSS3, JavaScript, and SQL, complemented by adeptness in GitHub
+                version control. I take pride in my portfolio, featuring dynamic web applications such as a personalized
+                portfolio webpage, a seamless PG booking platform, and an efficient event management system. These
+                endeavors reflect my dedication to crafting responsive, intuitive, and visually captivating digital
+                experiences. <br> <br>
+
+                Professional growth has been nurtured through invaluable experiences, including a graphic design stint
+                at Soulbliz and a pivotal web development role at Glucian India Pvt. Ltd. These engagements honed my
+                design acumen, fortified my coding prowess, and instilled a keen eye for detail. <br> <br>
+
+                My professional ethos is characterized by a blend of confidence, determination, and a relentless pursuit
+                of excellence. I thrive in collaborative settings, leveraging adept interpersonal skills, leadership
+                acumen, and impeccable time management to navigate complex challenges and drive collective success. <br>
+                <br>
+
+                Beyond the confines of work, I find solace in the digital realm, where I indulge in social media
+                dynamics, immersive gaming experiences, and the therapeutic allure of music. Fluent in English and
+                Hindi, I take immense pride in my rich cultural heritage, a testament to my roots and values. <br> <br>
+
+                Thank you for gracing my portfolio with your presence. Together, let's embark on a journey towards
+                innovation, creativity, and impactful contributions to the digital landscape.
+                <br> <br>
+                Warm regards, <br>
+                Jyotirmay Padhiary
+            </p>
+
+            <section class="skills">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <h3>Front-End Web Development</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Core Java</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>MySQL</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <!-- Add more skills as needed -->
+            </section>
+
+
+        </div>
+
+        <!-- projects -->
+
+        <div class="project" id="project">
+            <div class="inside-project">
+                <h2 class="heading-project">PROJECTS</h2>
+                <p><i>Remember to look</i></p><br>
+                <div class="project-list">
+                    <div class="project1 pro">
+                        <div class="up"></div>
+                        <div class="down">
+                            <p><a href="#home">EXPLORE</a></p>
+                        </div>
+                    </div>
+                    <div class="project2 pro">
+                        <div class="up"></div>
+                        <div class="down">
+                            <p><a href="#home">EXPLORE</a></p>
+                        </div>
+                    </div>
+                    <!-- <div class="project3 pro">
+                    <div class="up"></div>
+                    <div class="down"><p>EXPLORE</p></div>
+                </div> -->
+                </div>
+
+            </div>
+        </div>
+
+        <!-- contact  -->
+
+        <div class="contact-container">
+            <div class="contact" id="contact">
+                <h2>CONTACT</h2>
+                <p><i>Drop a Note!</i></p>
+                <div class="contact-form">
+                    <!-- use emailjs  -->
+                    <form id="form">
+                        <div class="field">
+                            <label for="from_name">Name : </label>
+                            <input type="text" name="from_name" id="from_name" placeholder="Enter your name here -">
+                        </div>
+                        <div class="field">
+                            <label for="subject">Subject : </label>
+                            <input type="text" name="subject" id="subject"
+                                placeholder="Enter your message subject here -">
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <input type="text" name="message" id="message" placeholder="Enter your message here -">
+                        </div>
+
+                        <!-- <div class="field">
+                            <label for="reply_to">reply_to</label>
+                            <input type="text" name="reply_to" id="reply_to">
+                        </div> -->
+
+                        <input type="submit" id="button" value="Send Message">
+                    </form>
+                    <div class="message" id="responseMessage"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- javascript  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('VfJjZqxIjDVEjtIgC')
+    </script>
+    <script>
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Sending...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_p4ly9an';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        alert('Sent!');
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
+            });
+    </script>
+</body>
+
+</html>
